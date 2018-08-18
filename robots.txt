@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /projects/
+
+Sitemap: https://andibeqiri.github.io/sitemap.xml
