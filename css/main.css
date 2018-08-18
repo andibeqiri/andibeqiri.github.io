@@ -295,7 +295,7 @@ footer {
 .wrapper:hover {
   background: #414141; }
 
-.box:hover h1 {
+.box:hover h1, .box:active h1 {
   background: #ffe400;
   color: #212121; }
 
