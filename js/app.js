@@ -53,10 +53,3 @@ function addEmail(){
   email.textContent = "andi.beqiri21@gmail.com"
 
 }
-
-function reverse(s) {
-  var o = '';
-  for (var i = s.length - 1; i >= 0; i--)
-    o += s[i];
-  return o;
-}
