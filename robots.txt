@@ -1,4 +1,11 @@
 User-Agent: *
-Disallow: /projects/
+Disallow: /projects
+Disallow: /projects/book_list
+Disallow: /projects/loan_calculator
+Disallow: /projects/number_guesser
+Disallow: /projects/prime_number_calculator
+Disallow: /projects/track_calories
+Disallow: /projects/week_scheduler
+
 
 Sitemap: https://andibeqiri.github.io/sitemap.xml
