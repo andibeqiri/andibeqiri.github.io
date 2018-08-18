@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Prime Number Calculator</title>
+
+
+</head>
+<body class="bg-light">
+	
+	<div class="container">
+		<h1>Prime Number Calculator</h1>
+		<form id='form-id'>
+			<div class="form-group">
+				<label for="number-input">Input Number</label>
+				<input id="number-input" type="number" min="0" class="form-control">
+				<small class="form-text text-muted">Check if number is prime</small>			
+			</div>
+			<button id="btn-id" class="btn btn-primary">Check</button>
+		</form>
+		<div id="card-id" class="card text-center">
+			<div id="yes-id">
+				<h1 class="text-success">YES</h1>
+				<small class="text-muted">
+					<span id="prime-id"></span> is a prime number
+				</small>
+			</div>
+			<div id="no-id">
+				<h1 class="text-danger">NO</h1>
+				<small class="text-muted">
+						<span id="composite-id"></span>
+						is not a prime number
+					</small>
+			</div>
+		</div>
+	</div> 
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

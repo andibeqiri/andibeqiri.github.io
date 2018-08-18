@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Energy Calculator</title>
+
+
+</head>
+<body class="bg-light">
+	<div class="container pt-4 pl-4 pr-4">
+
+		<h1 id="title-id"> Energy Calculator</h1>
+			
+		<form id="form-id">
+			<div class="form-group">
+	      <label for="appliance-name">Apliance Name</label>
+	      <input type="text" class="form-control" id="appliance-name" placeholder="Name">
+	    </div>	
+			<div class="form-row">
+				<div class="form-group col-md-6">
+		    	<label for="power-usage">Power Consumption</label>
+			    <input type="number" class="form-control" id="power-usage" placeholder="Watts" min="1">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="hour-usage">Hours per Day</label>
+		      <input type="number" class="form-control" id="hour-usage" placeholder="Hour" min="1" max="24">
+		    </div>
+			</div>
+			<div class="form-row">
+		    <div class="form-group col-md-6">
+		    	<label for="cost-id">Cost per watt</label>
+		      <input type="number" class="form-control" id="cost-id" step="0.01" min="1" placeholder="Cost">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="currency">Currency</label>
+		      <select id="currency" class="form-control">
+		        <option selected value="lek">ALL - Albanian Lek</option>
+		        <option value="dollar">$ - Dollar</option>
+		        <option value="euro">€ - Euro</option>	        
+
+		      </select>
+		    </div>
+		   
+		  </div>
+		  <button type="submit" class="btn btn-primary">Add</button>		  
+	
+		</form>
+
+		<div class="results">
+	
+			<ul class="list-group">
+				<li class="list-group-item">Total Day Cost:
+					<span id="total-day-cost">0</span></li>
+				<li class="list-group-item" >Total Month Cost:
+					<span id="total-month-cost">0</span></li>
+				<li class="list-group-item">Total Year Cost:
+					<span id="total-year-cost">0</span></li>
+			</ul>
+			<h3 pt-4>Appliance List</h3>
+			<table class="table" id="appliance-list">
+				<tr>
+					<th>Appliance Name</th>
+					<td>Cost Day</td>
+					<td>Cost Month</td>
+					<td>Cost Year</td>
+				</tr>
+			</table>
+
+			<button id="clear-btn" type="submit" class="btn btn-dark">Clear</button>
+		</div>
+		
+	</div>
+	
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

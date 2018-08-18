@@ -1,0 +1,21 @@
+.card {
+	width: 21rem;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+
+.success, .error {
+	color: white;
+	padding: 5px;
+	margin: 5px 0 15px 0;
+}
+.success {
+	background: #4CAF50;
+}
+.error{
+	background: #D32F2F;
+}
+
