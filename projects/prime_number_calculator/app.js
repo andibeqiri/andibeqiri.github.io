@@ -15,7 +15,7 @@ Prime.prototype.check_prime = function(){
 	if(this.n === 2){
 		return true;
 	}
-	if(this.n % 2 === 0){
+	if(this.n % 2 === 0 || this.n < 2){
 		return false;
 	}
 	let number = Math.sqrt(this.n);
@@ -71,14 +71,14 @@ Ui.prototype.showAnswer = function(answer){
 }
 
 function evaluate(e){
-	ui = new Ui();
-	number = parseInt(numberInput.value);
+	const ui = new Ui();
+	const number = parseInt(numberInput.value);
 	
 	if(isNaN(number)){
 		ui.showAlert('Invalid Input', 'text-danger');
 	}else {
-		prime = new Prime(number);
-		answer = prime.check_prime();
+		const prime = new Prime(number);
+		const answer = prime.check_prime();
 		console.log(answer);
 		ui.showAnswer(answer);	
 		ui.clearField();
