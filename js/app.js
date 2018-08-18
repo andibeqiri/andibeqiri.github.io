@@ -4,6 +4,9 @@ var navBar = document.getElementById("nav");
 var toTop = document.getElementById("to-top");
 var scrollbar = document.getElementById('scrollbar');
 var boxes = document.getElementsByClassName('box');
+var email = document.getElementById('email');
+
+
 
 navBar.addEventListener("click", function (e) {
   // console.log(e.target.parentNode.parentNode);
@@ -24,8 +27,12 @@ function removeActiveClass() {
   }
 }
 
+document.addEventListener('DOMContentLoaded', addEmail);
+
 document.addEventListener('scroll', scrollTopButton);
 document.addEventListener('scroll', scrollbarProgress);
+
+
 
 function scrollTopButton() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -40,4 +47,16 @@ function scrollbarProgress() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = winScroll / height * 100;
   scrollbar.style.width = scrolled + '%';
+}
+
+function addEmail(){
+  email.textContent = "andi.beqiri21@gmail.com"
+
+}
+
+function reverse(s) {
+  var o = '';
+  for (var i = s.length - 1; i >= 0; i--)
+    o += s[i];
+  return o;
 }

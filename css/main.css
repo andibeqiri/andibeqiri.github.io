@@ -96,9 +96,6 @@ img {
   height: auto;
   width: auto; }
 
-#mail {
-  font-family: Hack, monospace; }
-
 #to-top {
   display: none;
   position: fixed;
@@ -129,9 +126,9 @@ img {
 
 #scrollbar {
   position: fixed;
-  background: red;
+  background: #ff652f;
   width: 0;
-  height: 4px;
+  height: 5px;
   z-index: 4; }
 
 .mg-t-0 {
