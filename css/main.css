@@ -322,4 +322,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap; }
   .h-t-5 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .boxh1 {
+    background: #ffe400;
+    color: #212121; } }
