@@ -312,7 +312,8 @@ footer {
   .wrapper {
     width: 95%; }
   .btn {
-    font-size: 11px; }
+    font-size: 12px;
+    padding: 0; }
   .project {
     flex: 1 0 50%; }
   ul {
