@@ -37,7 +37,7 @@ function loadEventListeners(){
 	// Dom load event
 	document.addEventListener('DOMContentLoaded', populateSelect(days, selectDay));
   document.addEventListener('DOMContentLoaded', populateSelect(hours, selectHour));
-  document.addEventListener('DOMContentLoaded', popullateTable());
+  document.addEventListener('DOMContentLoaded', populateTable());
   scheduleForm.addEventListener('submit', addToTable);
 
 
@@ -55,7 +55,7 @@ function populateSelect(data, selectElement){
 
 }
 
-function popullateTable(){
+function populateTable(){
   days.forEach(function(day){
     let tr = document.querySelectorAll('.hours');
     hours.forEach(function(hour, i){
