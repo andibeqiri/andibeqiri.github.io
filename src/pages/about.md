@@ -3,8 +3,6 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-# About Andi
-
 Hi, I'm **Andi Beqiri**.
 
 This blog is where I publish notes, articles, and long-form posts.
