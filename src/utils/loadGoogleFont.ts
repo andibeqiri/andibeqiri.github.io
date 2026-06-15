@@ -51,12 +51,19 @@ async function loadGoogleFonts(
 
   const fonts = await Promise.all(
     fontsConfig.map(async ({ name, font, weight, style }) => {
-      const data = await loadGoogleFont(font, text, weight);
-      return { name, data, weight, style };
+      try {
+        const data = await loadGoogleFont(font, text, weight);
+        return { name, data, weight, style };
+      } catch {
+        return null;
+      }
     })
   );
 
-  return fonts;
+  return fonts.filter(
+    (font): font is { name: string; data: ArrayBuffer; weight: number; style: string } =>
+      font !== null
+  );
 }
 
 export default loadGoogleFonts;
