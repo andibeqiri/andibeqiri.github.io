@@ -2,6 +2,7 @@ import type { Props } from "astro";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
 import IconBrandX from "@/assets/icons/IconBrandX.svg";
 import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+import IconMastodon from "@/assets/icons/IconMastodon.svg";
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconWhatsapp from "@/assets/icons/IconWhatsapp.svg";
 import IconFacebook from "@/assets/icons/IconFacebook.svg";
@@ -34,6 +35,12 @@ export const SOCIALS: Social[] = [
     href: "https://www.linkedin.com/in/andi-beqiri/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
+  },
+  {
+    name: "Mastodon",
+    href: "https://mastodon.social/@_andibeqiri_",
+    linkTitle: `${SITE.title} on Mastodon`,
+    icon: IconMastodon,
   },
 ] as const;
 
