@@ -3,7 +3,7 @@ export const SITE = {
   author: "Andi Beqiri",
   profile: "https://andibeqiri.github.io/",
   desc: "Notes and writing by Andi Beqiri.",
-  title: "Andi's blog",
+  title: "Andi Beqiri's blog",
   ogImage: "og-default.svg",
   lightAndDarkMode: true,
   postPerIndex: 4,

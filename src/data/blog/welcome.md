@@ -6,7 +6,7 @@ featured: true
 draft: false
 tags:
   - Welcome
-description: First post on Andi's blog.
+description: First post on Andi Beqiri's blog.
 ---
 
 Welcome to my blog.

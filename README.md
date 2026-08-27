@@ -1,4 +1,4 @@
-# Andi's blog
+# Andi Beqiri's blog
 
 Personal blog for Andi Beqiri.
 

@@ -8,6 +8,6 @@
   <rect width="1200" height="630" fill="url(#bg)" />
   <circle cx="1030" cy="140" r="120" fill="#cbd5e1" fill-opacity="0.45" />
   <circle cx="940" cy="470" r="190" fill="#94a3b8" fill-opacity="0.2" />
-  <text x="90" y="295" fill="#0f172a" font-family="Georgia, Times New Roman, serif" font-size="80">Andi's blog</text>
+  <text x="90" y="295" fill="#0f172a" font-family="Georgia, Times New Roman, serif" font-size="80">Andi Beqiri's blog</text>
   <text x="90" y="360" fill="#334155" font-family="Arial, Helvetica, sans-serif" font-size="34">andibeqiri.github.io</text>
 </svg>
