@@ -6,7 +6,7 @@ featured: false
 draft: false
 tags:
   - Software Development
-description: Intuitive payment behavior does not happen magically. Idempotency has to be implemented.
+description: Intuitive behavior does not happen magically. You need to implement it.
 ---
 
 What surprises you the most when you build custom software is that “magic” does not exist. It has to be written.
