@@ -11,7 +11,7 @@ description: Intuitive behavior does not happen magically. You need to implement
 
 What surprises you the most when you build custom software is that “magic” does not exist. It has to be written.
 
-Intuitiveness always comes at an extra cost.
+> Intuitiveness always comes at an extra cost.
 
 To someone just getting into software development, a basic request seems simple.
 
