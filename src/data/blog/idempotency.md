@@ -80,5 +80,3 @@ func handlePayment(request: HTTPRequest) async -> HTTPResponse {
 ```
 
 That extra coordination is what makes the difference between a system that works as intended and a system that feels broken.
-
-Next time you use a framework that handles this for you, think about all the details that go into those few lines of code.
