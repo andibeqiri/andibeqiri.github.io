@@ -61,8 +61,14 @@ async function loadGoogleFonts(
   );
 
   return fonts.filter(
-    (font): font is { name: string; data: ArrayBuffer; weight: number; style: string } =>
-      font !== null
+    (
+      font
+    ): font is {
+      name: string;
+      data: ArrayBuffer;
+      weight: number;
+      style: string;
+    } => font !== null
   );
 }
 
